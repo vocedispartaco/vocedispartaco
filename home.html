@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voce di Spartaco - Bollettino di lotta</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #92140C;
+            --text-color: #000;
+            --bg-color: #fff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/api/placeholder/1600/900');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        
+        .hero-content {
+            z-index: 1;
+            max-width: 800px;
+            padding: 20px;
+        }
+        
+        .hero-title {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+        }
+        
+        .scroll-down {
+            position: absolute;
+            bottom: 30px;
+            font-size: 2rem;
+            color: white;
+            animation: bounce 2s infinite;
+            cursor: pointer;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-15px);
+            }
+            60% {
+                transform: translateY(-7px);
+            }
+        }
+        
+        /* Header */
+        header {
+            background-color: var(--bg-color);
+            border-bottom: 3px solid var(--primary-color);
+            padding: 20px 0;
+        }
+        
+        .site-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-align: center;
+        }
+        
+        .site-subtitle {
+            font-size: 1.2rem;
+            text-align: center;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        
+        /* Navigation */
+        nav {
+            background-color: var(--primary-color);
+            margin-bottom: 30px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        
+        .menu-toggle {
+            display: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            position: relative;
+        }
+        
+        .nav-links a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            transition: background-color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Menu a tendina */
+        .dropdown {
+            position: relative;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: var(--primary-color);
+            min-width: 200px;
+            z-index: 1;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown-content a {
+            padding: 12px 20px;
+        }
+        
+        /* Main Content */
+        .main-content {
+            background-color: var(--bg-color);
+            position: relative;
+            z-index: 2;
+        }
+        
+        .intro-section {
+            margin-bottom: 40px;
+        }
+        
+        .intro-section h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .intro-section p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        
+        .articles-section {
+            margin-bottom: 40px;
+        }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .article-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .article-image {
+            width: 100%;
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .article-content {
+            padding: 20px;
+        }
+        
+        .article-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .article-card p {
+            margin-bottom: 15px;
+        }
+        
+        .article-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        .read-more {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 3px;
+            transition: background-color 0.3s;
+        }
+        
+        .read-more:hover {
+            background-color: #711009;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #f1f1f1;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .footer-logo {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .social-links {
+            margin-bottom: 20px;
+        }
+        
+        .social-links a {
+            color: var(--text-color);
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: var(--primary-color);
+        }
+        
+        .copyright {
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .site-title {
+                font-size: 2rem;
+            }
+            
+            .menu-toggle {
+                display: block;
+            }
+            
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: var(--primary-color);
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .dropdown-content {
+                position: static;
+                width: 100%;
+                padding-left: 20px;
+            }
+            
+            .nav-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Voce di Spartaco</h1>
+            <p class="hero-subtitle">Bollettino di lotta</p>
+        </div>
+        <div class="scroll-down" id="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+    
+    <!-- Main Content with Navigation -->
+    <div class="main-content">
+        <nav>
+            <div class="container nav-container">
+                <button class="menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Edizioni ▾</a>
+                        <div class="dropdown-content">
+                            <a href="#">Gennaio 2025</a>
+                            <a href="#">Febbraio 2025</a>
+                            <a href="#">Marzo 2025</a>
+                            <a href="#">Aprile 2025</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Chi siamo</a></li>
+                    <li><a href="#">Contatti</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- Content Section -->
+        <div class="container">
+            <section class="intro-section">
+                <h2>Benvenuto nel bollettino di lotta</h2>
+                <p>Scopri le ultime edizioni e gli articoli sul nostro movimento e sulla nostra lotta. Ogni edizione è pensata per offrire un punto di vista politico e sociale da un'ottica comunista e internazionale.</p>
+            </section>
+            
+            <!-- Articles Section -->
+            <section class="articles-section">
+                <h2>Ultime Edizioni</h2>
+                <div class="articles-grid">
+                    <div class="article-card">
+                        <div class="article-image" style="background-image: url('/api/placeholder/800/450');"></div>
+                        <div class="article-content">
+                            <h3>La liberazione della donna: una prospettiva comunista</h3>
+                            <div class="article-meta">
+                                <span>Autori: Alberdo Gagliardi, Tiziano Di Marco</span>
+                            </div>
+                            <p>In questo articolo esploriamo il concetto di liberazione della donna dal punto di vista di una rivoluzione sociale comunista...</p>
+                            <a href="#" class="read-more">Leggi di più</a>
+                        </div>
+                    </div>
+                    <!-- Aggiungi gli altri articoli -->
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Voce di Spartaco</div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="copyright">© 2025 Voce di Spartaco. Tutti i diritti riservati.</div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
