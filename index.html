@@ -272,19 +272,25 @@
         } 
 
         <style>
-    /* Stile per elenchi con cerchi vuoti */
-        ul.cerchi-vuoti {
-            list-style-type: circle;  
-            position: absolute            /* Punti vuoti */
-            list-style-position: inside;  /* Posiziona i punti all'interno, più vicini al testo */
-            padding-left: 3em;           /* Rientro per l'intero elenco */
-            margin-left: 0;              /* Rimuove il margine predefinito */
+    /* Stile per elenchi con cerchi vuoti - soluzione per punti troppo a sinistra */
+         ul.cerchi-vuoti {
+              list-style: none; /* Rimuove i punti predefiniti */
+              padding-left: 0; /* Rimuove il padding predefinito */
+              margin-left: 0; /* Rimuove il margine predefinito */
         }
 
         .cerchi-vuoti li {
-            margin-bottom: 10px;
-            text-indent: -1.2em;         /* Rientro negativo per allineare il testo */
-            padding-left: 3.2em;         /* Padding compensativo per il testo */
+             margin-bottom: 10px;
+             position: relative; /* Per posizionare i punti personalizzati */
+             padding-left: 1.5em; /* Spazio per i punti personalizzati */
+        }
+
+/* Crea punti personalizzati con la posizione desiderata */
+        .cerchi-vuoti li::before {
+             content: "○"; /* Punto cerchio vuoto */
+             position: absolute;
+             left: 0.5em; /* Regola questa distanza per spostare i punti */
+            color: black;
         }
     
     /* Stile per elenchi senza punti */
