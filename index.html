@@ -9,18 +9,20 @@
         :root {
             --primary-color: #92140C;
             --text-color: #000;
-            --bg-color: #fff;
+            --bg-color: #fff; 
+            --heading-font: 'Anton'; 
+            --body-font: 'Open Sauce';
         }
         
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
         }
         
         body {
-            background-color: var(--bg-color);
+            background-color: var(--bg-color); 
+            font-family: var(--body-font);
             color: var(--text-color);
             line-height: 1.6;
         }
@@ -91,7 +93,8 @@
         header {
             background-color: var(--bg-color);
             border-bottom: 3px solid var(--primary-color);
-            padding: 20px 0;
+            padding: 20px 0; 
+            font-family: var(--header-font)
         }
         
         .site-title {
