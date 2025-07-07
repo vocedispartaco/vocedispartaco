@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+    <header class="navbar">
+      <div class="container">
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="edizioni.html">Edizioni</a>
+          <a href="chi-siamo.html">Chi Siamo</a>
+        </nav>
+      </div>
+    </header>  
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,195 +32,225 @@
           --heading-font: 'Anton', sans-serif;
           --body-font: 'Open Sauce Sans', sans-serif;
         }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
+
+      .navbar {
+          background-color: #fff;
+          border-bottom: 2px solid #92140C;
+          padding: 10px 0;
+          font-family: 'Anton', sans-serif;
+          position: sticky;
+          top: 0;
+          z-index: 999;
         }
         
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
+        .nav-links {
+          display: flex;
+          justify-content: center;
+          gap: 30px;
         }
         
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
+        .nav-links a {
+          text-decoration: none;
+          color: #000;
+          font-size: 1.1rem;
+          text-transform: uppercase;
+          transition: color 0.3s ease;
         }
         
-        /* Main Content */
-        .main-content {
-            background-color: var(--bg-color);
-            position: relative;
-            z-index: 2;
-            padding-top: 40px;
+        .nav-links a:hover {
+          color: #92140C;
         }
         
-        /* Chi Siamo Page Specific */
-        .page-title {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-            text-align: left;
-            color: var(--text-color);
-        }
-        
-        .divider {
-            height: 2px;
-            background-color: var(--primary-color);
-            margin: 20px 0 30px 0;
-        }
-        
-        .section-header {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            margin-bottom: 30px;
-            flex-wrap: nowrap; /* Previene il wrapping su schermi più piccoli */
-        }
-        
-        .section-title {
-            color: var(--primary-color);
-            font-size: 2rem;
-            margin-right: 20px;
-            white-space: nowrap; /* Mantiene il titolo su una riga */
-        }
-        
-        .logo {
-            max-height: 70px;
-            width: auto;
-            display: block; /* Assicura che l'immagine sia trattata come un elemento di blocco */
-            margin-left: 15px; /* Spazio tra il titolo e il logo */
-        }
-        
-        .section {
-            margin-bottom: 30px;
-        }
-        
-        .section p {
-            margin-bottom: 20px;
-            text-align: justify;
-            font-size: 1.1rem;
-        }
-        
-        /* Footer */
-        footer {
-            background-color: #f1f1f1;
-            padding: 20px 0;
-            margin-top: 40px;
-        }
-        
-        .footer-content {
-            display: flex;
+        @media screen and (max-width: 600px) {
+          .nav-links {
             flex-direction: column;
             align-items: center;
+            gap: 10px;
+          }
         }
-        
-        .footer-logo {
-            font-size: 1.5rem;
-            color: var(--primary-color);
-            margin-bottom: 20px;
-        }
-        
-        .social-links {
-            margin-bottom: 20px;
-        }
-        
-        .social-links a {
-            color: var(--text-color);
-            font-size: 1.5rem;
-            margin: 0 10px;
-            transition: color 0.3s;
-        }
-        
-        .social-links a:hover {
-            color: var(--primary-color);
-        }
-        
-        .copyright {
-            text-align: center;
-            font-size: 0.9rem;
-        }
-        
-        /* Responsive Design */
-        @media screen and (max-width: 768px) {
-            .page-title {
-                font-size: 2rem;
-            }
-            
-            .section-title {
-                font-size: 1.7rem;
-            }
-            
-            /* Manteniamo il layout orizzontale anche su mobile */
-            .section-header {
-                align-items: center;
-            }
-            
-            /* Riduciamo le dimensioni del logo su schermi più piccoli */
-            .logo {
-                max-height: 50px;
-            }
-        }
-    </style>
+
+         * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: var(--body-font);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .main-content {
+      background-color: var(--bg-color);
+      position: relative;
+      z-index: 2;
+      padding-top: 40px;
+    }
+
+    /* Tipografia */
+    h1, h2, h3, .page-title, .section-title {
+      font-family: var(--heading-font);
+    }
+
+    .page-title {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      color: var(--text-color);
+    }
+
+    .divider {
+      height: 2px;
+      background-color: var(--primary-color);
+      margin: 20px 0 30px 0;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 30px;
+      flex-wrap: nowrap;
+    }
+
+    .section-title {
+      color: var(--primary-color);
+      font-size: 2rem;
+      margin-right: 20px;
+      white-space: nowrap;
+    }
+
+    .logo {
+      max-height: 70px;
+      width: auto;
+      display: block;
+      margin-left: 15px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section p {
+      margin-bottom: 20px;
+      text-align: justify;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      background-color: #f1f1f1;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-logo {
+      font-size: 1.5rem;
+      color: var(--primary-color);
+      margin-bottom: 20px;
+      font-family: var(--heading-font);
+    }
+
+    .social-links {
+      margin-bottom: 20px;
+    }
+
+    .social-links a {
+      color: var(--text-color);
+      font-size: 1.5rem;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: var(--primary-color);
+    }
+
+    .copyright {
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      .page-title {
+        font-size: 2rem;
+      }
+
+      .section-title {
+        font-size: 1.7rem;
+      }
+
+      .logo {
+        max-height: 50px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="main-content">
-        <main class="container">
-            <h1 class="page-title">Chi Siamo</h1>
-            <div class="divider"></div>
-            
-            <div class="section-header">
-                <h2 class="section-title">Lotta Spartaco</h2>
-                <img src="img/F0C205B9-090F-45C1-813E-F416320E067C.PNG" alt="Logo Voce di Spartaco" class="logo">
-                <!-- Sostituisci "path/to/logo.png" con il percorso effettivo al tuo logo -->     
-            </div>
-            
-            <section class="section">
-                <p>
-                    Lotta Spartaco nasce a Catania con l'intenzione di creare un'alternativa concreta e radicale nel panorama della politica studentesca e cittadina in opposizione all'attuale panorama politico, dominato da dinamiche gerarchiche e tossiche che hanno frammentato il potenziale rivoluzionario della città, soffocando la cooperazione tra le forze d'opposizione.
-                </p>
-            </section>
-            
-            <section class="section">
-                <p>
-                    Lotta Spartaco nasce quindi anche come ambiente di scambio, di collaborazione e di organizzazione delle realtà politiche opposte e contrarie all'attuale sistema oppressivo. In un contesto dove le forze parlamentari, liberali, riformiste e i loro servili alleati si sono appropriati dei mezzi di lotta e dominano il panorama politico, riducendo la conflittualità sociale a un teatro sterile e manipolato.
-                </p>
-            </section>
-            
-            <section class="section">
-                <p>
-                    Lotta Spartaco si pone l'obiettivo di abbattere il muro del silenzio, unendo settori sociali frammentati (studenti medi, universitari e lavoratori) sotto un'unica bandiera: quella della lotta di classe contro il capitale e i suoi servi.
-                </p>
-            </section>
-            
-            <section class="section">
-                <p>
-                    La figura di Spartaco, leader e simbolo della ribellione degli schiavi contro il potere imperiale di Roma, rappresenta per noi il simbolo eterno della resistenza collettiva contro l'oppressione. Così come Spartaco non accettò di piegarsi al destino imposto dai padroni, anche noi non accettiamo il sistema economico e sociale che sfrutta e disumanizza, giustificando il sacrificio di milioni di innocenti sull'altare del potere e del profitto. La resistenza è il nostro filo conduttore, in ogni sua forma: nelle fabbriche e nelle scuole come nelle strade.
-                </p>
-            </section>
-            
-            <section class="section">
-                <p>
-                    Lotta Spartaco crede che solo attraverso un'azione congiunta e unitaria da parte di tutti i settori della società, profondamente radicata nella teoria e nella prassi, si possa creare un'alternativa reale all'immobilismo e alla staticità che oggi domina la lotta politica in tutte le sue forme. Rifiutiamo totalmente le politiche identitarie, che non fanno altro che segmentare il corpo sociale e disgregare la forza unitaria delle masse studentesche e cittadine, e ci opponiamo con forza alla cosiddetta "lotta culturale", nient'altro che uno strumento di distrazione del sistema, nonché prodotto tossico del liberalismo che sottrae attenzione dalla vera lotta fondamentale: quella contro il capitalismo, l'unica intrinsecamente intersezionale e sistematica.
-                </p>
-            </section>
-        </main>
-        
-        <footer>
-            <div class="container footer-content">
-                <div class="footer-logo">Voce di Spartaco</div>
-                <div class="social-links">
-                    <a href="https://www.instagram.com/lottaspartaco?igsh=MXcwaDhzYmNzZ2dzeg==" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://t.me/+aBlmgcDWCow5MTRk" target="_blank"><i class="fab fa-telegram"></i></a>
-                </div>
-                <p class="copyright">© 2025 Lotta Spartaco. Tutti i diritti riservati.</p>
-            </div>
-        </footer>
-    </div>
+  <div class="main-content">
+    <main class="container">
+      <h1 class="page-title">Chi Siamo</h1>
+      <div class="divider"></div>
+
+      <div class="section-header">
+        <h2 class="section-title">Lotta Spartaco</h2>
+        <img src="img/F0C205B9-090F-45C1-813E-F416320E067C.PNG" alt="Logo Voce di Spartaco" class="logo" />
+      </div>
+
+      <section class="section">
+        <p>
+          Lotta Spartaco nasce a Catania con l'intenzione di creare un'alternativa concreta e radicale nel panorama della politica studentesca e cittadina in opposizione all'attuale panorama politico, dominato da dinamiche gerarchiche e tossiche che hanno frammentato il potenziale rivoluzionario della città, soffocando la cooperazione tra le forze d'opposizione.
+        </p>
+      </section>
+
+      <section class="section">
+        <p>
+          Lotta Spartaco nasce quindi anche come ambiente di scambio, di collaborazione e di organizzazione delle realtà politiche opposte e contrarie all'attuale sistema oppressivo. In un contesto dove le forze parlamentari, liberali, riformiste e i loro servili alleati si sono appropriati dei mezzi di lotta e dominano il panorama politico, riducendo la conflittualità sociale a un teatro sterile e manipolato.
+        </p>
+      </section>
+
+      <section class="section">
+        <p>
+          Lotta Spartaco si pone l'obiettivo di abbattere il muro del silenzio, unendo settori sociali frammentati (studenti medi, universitari e lavoratori) sotto un'unica bandiera: quella della lotta di classe contro il capitale e i suoi servi.
+        </p>
+      </section>
+
+      <section class="section">
+        <p>
+          La figura di Spartaco, leader e simbolo della ribellione degli schiavi contro il potere imperiale di Roma, rappresenta per noi il simbolo eterno della resistenza collettiva contro l'oppressione. Così come Spartaco non accettò di piegarsi al destino imposto dai padroni, anche noi non accettiamo il sistema economico e sociale che sfrutta e disumanizza, giustificando il sacrificio di milioni di innocenti sull'altare del potere e del profitto. La resistenza è il nostro filo conduttore, in ogni sua forma: nelle fabbriche e nelle scuole come nelle strade.
+        </p>
+      </section>
+
+      <section class="section">
+        <p>
+          Lotta Spartaco crede che solo attraverso un'azione congiunta e unitaria da parte di tutti i settori della società, profondamente radicata nella teoria e nella prassi, si possa creare un'alternativa reale all'immobilismo e alla staticità che oggi domina la lotta politica in tutte le sue forme. Rifiutiamo totalmente le politiche identitarie, che non fanno altro che segmentare il corpo sociale e disgregare la forza unitaria delle masse studentesche e cittadine, e ci opponiamo con forza alla cosiddetta "lotta culturale", nient'altro che uno strumento di distrazione del sistema, nonché prodotto tossico del liberalismo che sottrae attenzione dalla vera lotta fondamentale: quella contro il capitalismo, l'unica intrinsecamente intersezionale e sistematica.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-content">
+        <div class="footer-logo">Voce di Spartaco</div>
+        <div class="social-links">
+          <a href="https://www.instagram.com/lottaspartaco?igsh=MXcwaDhzYmNzZ2dzeg==" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://t.me/+aBlmgcDWCow5MTRk" target="_blank"><i class="fab fa-telegram"></i></a>
+        </div>
+        <p class="copyright">© 2025 Lotta Spartaco. Tutti i diritti riservati.</p>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
