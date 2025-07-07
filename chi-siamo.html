@@ -1,14 +1,22 @@
 <!DOCTYPE html>
-    <header class="navbar">
-      <div class="container">
-        <nav class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="edizioni.html">Edizioni</a>
-          <a href="chi-siamo.html">Chi Siamo</a>
-        </nav>
-      </div>
-    </header>  
-    <head>
+    <header>
+  <div class="container nav-container">
+    <button class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#">Edizioni ▾</a>
+        <div class="dropdown-content">
+          <a href="marzo-2025.html">Marzo 2025</a>
+          <!-- Puoi aggiungere altre edizioni qui -->
+        </div>
+      </li>
+      <li><a href="chi-siamo.html">Chi siamo</a></li>
+    </ul>
+  </div>
+</header>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Chi Siamo - Voce di Spartaco</title>
