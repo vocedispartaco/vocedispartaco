@@ -37,20 +37,38 @@
         }
         
         /* Hero Section */
-        .hero {
-            height: 100vh;
-            background-image: url('img/Screenshot 2025-04-20 190727.png');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-            position: relative;
-        }
+            .hero {
+                background-image: url('img/Screenshot 2025-04-20 190727.png');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: scroll; /* Fallback di base per tutti */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: white;
+                position: relative;
+                height: 100vh;
+            }
+
+            /* Abilita parallax solo su dispositivi con larghezza > 768px */
+            @media screen and (min-width: 769px) {
+                .hero {
+                    background-attachment: fixed;
+                }
+            }
+            
+            /* Ottimizza layout per mobile */
+            @media screen and (max-width: 768px) {
+                .hero {
+                    height: auto;
+                    padding: 80px 20px;
+                    background-position: center top;
+                }
+            }
+
         
         .hero-content {
             z-index: 1;
