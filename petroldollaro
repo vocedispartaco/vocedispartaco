@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La catena del capitale: da Aushwitz a Gaza | La Voce di Spartaco</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Anton:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #92140C;
+            --text-color: #000;
+            --bg-color: #fff; 
+            --heading-font: 'Anton'; 
+            --body-font: 'Inter', sans-serif;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .main-content {
+            background-color: var(--bg-color);
+            position: relative;
+            z-index: 2;
+            padding-top: 40px;
+        }
+        
+        .article-title {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            text-align: left;
+            color: var(--primary-color);
+        }
+        
+        .divider {
+            height: 2px;
+            background-color: var(--primary-color);
+            margin: 20px 0 30px 0;
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-right: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .text-image-section {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2rem;
+        }
+        
+        .side-by-side {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .article-image {
+            width: 100%;
+            height: auto;
+            margin: 1rem 0;
+            border-radius: 5px;
+            border: 1px solid #e0e0e0;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+            font-size: 1.1rem;
+        }
+        
+        .next-article-button {
+            display: block;
+            width: 200px;
+            margin: 2rem auto;
+            padding: 0.8rem 1.5rem;
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .next-article-button:hover {
+            background-color: #7a110a;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #f1f1f1;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .footer-logo {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .social-links {
+            margin-bottom: 20px;
+        }
+        
+        .social-links a {
+            color: var(--text-color);
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: var(--primary-color);
+        }
+        
+        .copyright {
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        
+        /* Media query per schermi più grandi */
+        @media (min-width: 768px) {
+            .side-by-side {
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 2rem;
+            }
+            
+            .side-by-side .article-image {
+                width: 40%;
+                margin: 0;
+            }
+            
+            .side-by-side .text-content {
+                width: 60%;
+            }
+            
+            .flow-text {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .flow-text p {
+                width: 100%;
+            }
+            
+            .text-image-section.reversed .side-by-side {
+                flex-direction: row-reverse;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <main class="container">
+            <h1 class="article-title">La catena del capitale: da Aushwitz a Gaza</h1>
+            <div class="divider"></div>
+            
+            <section>
+                <h2 class="section-title">Premessa</h2>
+                <div class="text-image-section">
+                    <p>La crisi del capitalismo statunitense nel 1971, con l’abbandono del gold standard da parte di Nixon, non fu un mero aggiustamento monetario, ma l’inizio di una riconfigurazione geopolitica globale. Privato di valore intrinseco, il dollaro si trasformò in un’arma di dominio attraverso il patto con l’OPEP: il petrolio venduto esclusivamente in dollari creò il sistema del petrodollaro, legando l’egemonia USA all’energia fossile. Questo meccanismo, come notò l’economista marxista Samir Amin, «trasformò il Medio Oriente in un campo di battaglia permanente», dove ogni tentativo di sfidare il dollaro (Saddam con l’euro, Gaddafi con il dinaro africano) venne represso con guerre e colpi di stato.</p>
+                </div>
+            </section>
+            
+            <section>
+                <div class="text-image-section">
+                    <div class="side-by-side">
+                        <div class="text-content">
+                            <p>L’Iran, oggi al centro del conflitto, rappresenta l’ultimo baluardo anti-imperialista nella regione. Le sanzioni e l’isolamento non sono una questione di “diritti umani”, ma la risposta alla sua alleanza con la Cina e alla minaccia alla supremazia del dollaro attraverso accordi in yuan. Secondo i dati del FMI, l’Iran ha registrato una contrazione del PIL del 6.7% nel 2021, con un’inflazione al 39.4% e disoccupazione giovanile al 70%, indicatori di un’economia strangolata.</p>
+                        </div>
+                        <img src="img/riva.png" class="article-image">
+                    </div>
+                </div>
+            </section>
+            
+            <section>
+                <div class="text-image-section">
+                    <p>L’attuale escalation israeliana a Gaza va letta in questa cornice: non come scontro religioso, ma come liquidazione di un ostacolo geoeconomico alla realizzazione del corridoio IMEC (India-Medio Oriente-Europa), che bypasserebbe le rotte cinesi della BRI. Il Progetto Ben-Gurion, un canale alternativo a Suez, richiede terra libera: Gaza dev’essere spazzata via, insieme alla sua gente. Netanyahu, mostrando una mappa senza Palestina all’ONU, ha segnalato non un errore cartografico, ma un progetto di cancellazione fisica. Questo parallelo con Auschwitz non è metaforico. Come scriveva Amadeo Bordiga nel saggio Auschwitz o il grande alibi (1960), «il genocidio non è un atto di odio razziale, ma una conseguenza della crisi del capitale, che elimina i “sovrannumerari” per ristabilire il profitto».</p>
+                    <img src="img/kollon.png" class="article-image">   
+                </div>
+            </section>
+            
+            <section>
+                <div class="text-image-section">
+                  <div class="side-by-side">
+                    <p>Gaza, con il 70% di disoccupazione giovanile e una densità abitativa insostenibile, incarna questa categoria: un popolo reso superfluo dall’imperialismo, da espellere o annientare. La retorica del “Mai più” si è trasformata in un dispositivo ideologico per giustificare nuovi stermini. Come scriveva Moishe Postone, «la Shoah viene usata per legittimare l’oppressione coloniale israeliana». Bordiga, nel suo testo, smaschera questa ipocrisia: «Il capitale non ha patria, solo profitto. Auschwitz non fu un’eccezione, ma la norma di un sistema che trasforma l’uomo in merce».</p>
+                    <img src="img/locandina.png" alt="Donne nell'URSS" class="article-image">  
+                </div>
+            </section>
+            
+            <section>
+                <div class="text-image-section">
+                  <div class="side-by-side">
+                    <p>Oggi, la distruzione di Gaza serve a liberare il percorso del Canale Ben Gurion, garantendo a Israele il controllo delle rotte energetiche. Le parole di Trump su “Gaza come attrazione turistica” rivelano la logica capitalistica: trasformare il sangue in merce, la memoria in spectacle. Auschwitz non fu solo un campo di sterminio, ma un complesso industriale: la compagnia IG Farben sfruttava i prigionieri per produrre benzina sintetica e gomma, integrando genocidio e profitto. Oggi, la distruzione di Gaza serve a liberare il percorso del Canale Ben Gurion, progetto che competerebbe con Suez, garantendo a Israele il controllo delle rotte energetiche e commerciali. Le azioni di Trump rivelano la logica capitalistica: trasformare il sangue in merce, la memoria in vano spettacolo. Marx nel Capitale descrive la “popolazione eccedente” come un prodotto necessario del capitalismo, da eliminare quando non redditizia.</p>
+                    <img src="img/locandina.png" alt="Donne nell'URSS" class="article-image">  
+                </div>
+            </section> 
+            
+            <section>
+                <div class="text-image-section">
+                  <div class="side-by-side">
+                    <p>L’Iran, con un PIL nominale di $463,7 miliardi e un debito pubblico al 34% del PIL nel 2025, è costretto a vendere petrolio in yuan per sfuggire alle sanzioni, minacciando il dominio del dollaro. La risposta degli USA è stata un aumento della spesa militare a $20 miliardi, con dispiegamento di bombardieri B-2 a Diego Garcia, pronti a colpire. La Cina, con la Nuova Via della Seta, si prepara all’inevitabile scontro che decreterà quale dei grandi capitalismi riuscirà a reggere e a trionfare nella crisi: l’Iran ha aderito alla SCO e all’Unione Economica Eurasiatica, cercando di diversificare la sua economia verso agricoltura e energie rinnovabili. Tuttavia, la dipendenza dal petrolio (56% delle esportazioni) rende fragile questa transizione.</p>
+                    <img src="img/locandina.png" alt="Donne nell'URSS" class="article-image">  
+                </div>
+            </section> 
+
+            <section>
+                <div class="text-image-section">
+                  <div class="side-by-side">
+                    <p>Marx lo disse chiaramente: “Il capitale reca in sé i germi della propria distruzione”. Quando la crisi arriva, la borghesia si trasforma in belva gettando via il falso velo della democrazia. Gaza è l’esempio perfetto: un genocidio di classe, dove i poveri muoiono per garantire profitti a pochi. Non è un caso che Trump parli di “rendere Gaza una attrazione turistica”: è la stessa logica che trasformò Auschwitz in un campo-industria, dove i prigionieri diventavano carburante per l’economia di guerra. I palestinesi, come gli ebrei ieri, sono “sovrappopolazione” da eliminare. Non servi utili al capitale, quindi inutili. E come i kapò collaboravano coi nazisti, oggi i regimi arabi insieme a tutti i governi del mondo complottano con Israele, vendendo il sangue palestinese per briciole di dollari.</p>
+                    <img src="img/locandina.png" alt="Donne nell'URSS" class="article-image">  
+                </div>
+            </section> 
+
+            <section>
+                <div class="text-image-section">
+                  <div class="side-by-side">
+                    <p>Per comprendere l’attuale crisi del capitalismo e tutti questi suoi meccanismi di difesa è necessario partire dalla teoria del valore-lavoro e dal saggio sulla riduzione del profitto: il capitalismo riporta una contraddizione interna che porta, nel lungo periodo, a una riduzione del tasso di profitto per i capitalisti, che inevitabilmente causa crisi cicliche arginate come possibile da guerre e conflitti e genocidi. Di fronte a questa macchina di morte, la risposta non può essere il nazionalismo o l’appello ai “valori democratici” e tantomeno alla memoria. Come scrisse Primo Levi, «Auschwitz è fuori dell’uomo, è una creazione umana», e come tale può essere distrutta solo da una lotta di classe che unisca oppressi di tutte le nazioni. Bordiga, nel suo testo, afferma: «Il fronte vero non è tra democrazia e fascismo, ma tra proletariato e capitale». Questo significa combattere le multinazionali, tutte complici dell’apartheid israeliano, riconoscendo che non esistano “capitalismi buoni” e che la logica del boicottaggio e del disinvestimento sia non solo inutile, ma profondamente controrivoluzionaria e borghese.</p>
+                    <img src="img/locandina.png" alt="Donne nell'URSS" class="article-image">  
+                </div>
+            </section> 
+
+            <section>
+                <div class="text-image-section">
+                  <div class="side-by-side">
+                    <p>È necessario sostenere i palestinesi, spingendo per una vera resistenza fuori dai giochi del capitale, ed è indispensabile opporsi alle guerre per il petrolio applicando concretamente il disfattismo rivoluzionario, sabotando e sopprimendo qualsiasi sforzo bellico e qualsiasi mira di riarmo. La solidarietà con Gaza non è carità, ma autodifesa di classe contro un sistema che trasforma vite prima in morte e poi merce. Auschwitz e Gaza sono capitoli dello stesso libro scritto dai padroni capitalisti con il sangue degli innocenti come inchiostro. L’internazionalismo proletario non è un sogno: è l’unica pratica che può spezzare la catena dello sfruttamento, trasformando il lutto in rivolta e la cenere in un futuro migliore. Il capitale non ha patria, è vero, ma la rivoluzione sì: la rivoluzione ha patria nel proletariato di tutti i paesi, nella lotta di classe contro il capitalismo e i suoi servi fino alla soppressione totale della borghesia e di tutti i suoi cani.</p>
+                    <img src="img/locandina.png" alt="Donne nell'URSS" class="article-image">  
+                </div>
+            </section> 
+            
+            <a href="lega-spartaco-2.html" class="next-article-button">Articolo successivo →</a>
+        </main>
+        
+        <footer>
+            <div class="container footer-content">
+                <div class="footer-logo">Voce di Spartaco</div>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/voce_di_spartaco/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://t.me/vocedispartaco" target="_blank"><i class="fab fa-telegram"></i></a>
+                </div>
+                <p class="copyright">© 2025 Lotta Spartaco. Tutti i diritti riservati.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
