@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La rivoluzione in Germania: parte seconda | La Voce di Spartaco</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Anton:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #92140C;
+            --text-color: #000;
+            --bg-color: #fff; 
+            --heading-font: 'Anton'; 
+            --body-font: 'Inter', sans-serif;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .main-content {
+            background-color: var(--bg-color);
+            position: relative;
+            z-index: 2;
+            padding-top: 40px;
+        }
+        
+        .article-title {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            text-align: left;
+            color: var(--primary-color);
+        }
+        
+        .divider {
+            height: 2px;
+            background-color: var(--primary-color);
+            margin: 20px 0 30px 0;
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-right: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .text-image-section {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2rem;
+        }
+        
+        .side-by-side {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .article-image {
+            width: 100%;
+            height: auto;
+            margin: 1rem 0;
+            border-radius: 5px;
+            border: 1px solid #e0e0e0;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+            font-size: 1.1rem;
+        }
+        
+        .next-article-button {
+            display: block;
+            width: 200px;
+            margin: 2rem auto;
+            padding: 0.8rem 1.5rem;
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .next-article-button:hover {
+            background-color: #7a110a;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #f1f1f1;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .footer-logo {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .social-links {
+            margin-bottom: 20px;
+        }
+        
+        .social-links a {
+            color: var(--text-color);
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: var(--primary-color);
+        }
+        
+        .copyright {
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        
+        /* Media query per schermi più grandi */
+        @media (min-width: 768px) {
+            .side-by-side {
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 2rem;
+            }
+            
+            .side-by-side .article-image {
+                width: 40%;
+                margin: 0;
+            }
+            
+            .side-by-side .text-content {
+                width: 60%;
+            }
+            
+            .flow-text {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .flow-text p {
+                width: 100%;
+            }
+            
+            .text-image-section.reversed .side-by-side {
+                flex-direction: row-reverse;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <main class="container">
+            <h1 class="article-title">La rivoluzione in Germania: parte seconda</h1>
+            <div class="divider"></div>
+            
+            <section>
+                <h2 class="section-title">Premessa</h2>
+                <div class="text-image-section">
+                    <p>Alla fine della guerra, lo Stato maggiore tedesco uscito sconfitto si rivolgeva al problema centrale che affliggeva la borghesia tedesca: salvaguardare il proprio dominio di classe. Durante le trattative per l’armistizio, la Germania ebbe il consenso di conservare migliaia di mitragliatrici con il fine di “preservare l’ordine”, inoltre vennero create unità segrete armate e fedeli in ogni reggimento dell’esercito tedesco. Questi sono alcuni dei tanti esempi di come la borghesia tedesca, compatta e unita, stava organizzando preventivamente le forze della controrivoluzione in vista di uno scontro interno prefigurato dagli scioperi di gennaio che avevano mobilitato milioni di operai da Vienna a Berlino.</p>
+                </div>
+            </section>
+            
+            <section>
+                <div class="text-image-section">
+                    <div class="side-by-side">
+                        <div class="text-content">
+                            <p>Nel mentre continuavano le trattative per portare al governo l’SPD in maniera tale da poter mostrare un volto democratico necessario per rientrare nei criteri enunciati dai 14 punti del presidente americano Wilson, quando all’improvviso la tranquillità dei padroni inciampò: verso la fine di ottobre arrivò a Berlino la notizia dell’ammutinamento di Kiel, i marinai si rifiutarono di preparare l’ultima offensiva disperata voluta dalla Kaiserliche Marine impedendo l’uscita delle navi, fu così che venne istituito il primo Consiglio (soviet) dei soldati.</p>
+                        </div>
+                        <img src="img/riva.png" class="article-image">
+                    </div>
+                </div>
+            </section>
+            
+            <section>
+                <div class="text-image-section">
+                  <div class="side-by-side">
+                    <p>Il 4 novembre, l’alleanza tra Stato maggiore e SPD inviò Noske, membro della leadership socialdemocratica maggioritaria, a Kiel. Noske sfruttò le sue credenziali “socialiste” per dichiararsi in maniera incontestabile capo del movimento. L’USPD lo sostenne in nome dell’unità proletaria, e la Lega di Spartaco, essendone parte, non poté contrastare in modo indipendente e deciso questa manovra con cui i padroni, tramite la socialdemocrazia, tentarono di avvelenare la rivoluzione. Nel frattempo, ad Amburgo, Colonia, Francoforte, Brema, Dresda, Monaco, Lipsia, Hannover, Düsseldorf, Stoccarda e in circa altre cento città, si seguì l’esempio di Kiel, dando vita ai Consigli dei lavoratori e dei soldati. La polizia consegnò le armi ai lavoratori e i soldati abbandonarono le caserme. I principi tedeschi furono cacciati dai loro palazzi, e il 9 novembre anche il Kaiser li seguì, non riuscendo a resistere all’ondata rivoluzionaria scoppiata in pochi giorni.</p>
+                    <img src="img/locandina.png" alt="Donne nell'URSS" class="article-image">  
+                </div>
+            </section>
+
+            <section>
+                <div class="text-image-section">
+                    <p>Tuttavia, i consigli tedeschi non somigliavano ai soviet russi: in Germania, il movimento consiliare era ormai dominato dalle direzioni dell’SPD e delle centrali sindacali socialdemocratiche. In assenza di un partito rivoluzionario d’avanguardia, le forze riformiste erano diventate la componente più radicata all’interno del movimento. Al Congresso dei Consigli, tenutosi a dicembre, la posizione della Lega di Spartaco era che il Congresso dichiarasse che tutto il potere appartenesse ai Consigli, opponendosi così all’elezione di un’assemblea nazionale. Come spiegato da Leviné, uno dei compagni spartachisti presenti al congresso, il rifiuto della Lega di Spartaco di separarsi dall’USPD aveva impedito ai delegati di essere ascoltati. La proposta spartachista fu infatti sconfitta nettamente dalla maggioranza socialdemocratica e riformista, che impose la soppressione dei Consigli e l’elezione di un’assemblea nazionale per dare vita al nuovo stato borghese.</p>
+                    <img src="img/kollon.png" class="article-image">   
+                </div>
+            </section>
+
+             <section>
+                <div class="text-image-section">
+                    <p>Come abbiamo visto, la tragedia fino ad adesso consisteva nella mancanza di un partito rivoluzionario indipendente capace di radicarsi nelle lotte degli operai e dei soldati tedeschi così da far fronte alla socialdemocrazia, responsabile della soppressione di qualsiasi svolta rivoluzionaria possibile. La visione della Luxemburg secondo cui era “meglio il peggior partito della classe operaia piuttosto che nessun partito” non riusciva a comprendere che la socialdemocrazia non era semplicemente caduta in errore o diventata opportunista, essa si trovava dall’altra parte della barricata dello scontro di classe. Gli spartachisti furono incapaci di una critica netta alla socialdemocrazia e continuarono a rimanere attaccati ad essa, e fu proprio questa mancanza di indipendenza organizzativa dall’USPD che condannò gli spartachisti all’impotenza di fronte alla controrivoluzione.</p>
+                    <img src="img/kollon.png" class="article-image">   
+                </div>
+            </section>
+
+            <section>
+                <div class="text-image-section">
+                        <div class="text-content flow-text">
+                            <p> *Verso la fine del 1918 avvenne la formazione del Partito Comunista Tedesco (KPD) tramite l’unione dei Comunisti Internazionali di Germania (IKD) con gli Spartachisti. Come abbiamo visto il partito sorse troppo tardi in quanto, la controrivoluzione era già in marcia e la prospettiva comunista aveva bisogno di un processo di radicamento nella classe prima che essa fosse pronta a rompere in maniera totale con i limiti che la socialdemocrazia imponeva nelle lotte e nella rivoluzione spontanea. Furono questi, in sintesi, gran parte dei problemi alla radice che impedirono il successo della rivoluzione proletaria in Germania. Questi eventi solo un’enorme lezione di storia per la classe operaia di tutto il mondo, studiare gli errori del passato deve essere il compito di qualsiasi persona che voglia definirsi rivoluzionaria.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <a href="governo-meloni.html" class="next-article-button">Articolo successivo →</a>
+        </main>
+        
+        <footer>
+            <div class="container footer-content">
+                <div class="footer-logo">Voce di Spartaco</div>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/voce_di_spartaco/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://t.me/vocedispartaco" target="_blank"><i class="fab fa-telegram"></i></a>
+                </div>
+                <p class="copyright">© 2025 Lotta Spartaco. Tutti i diritti riservati.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
