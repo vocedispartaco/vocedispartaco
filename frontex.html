@@ -63,23 +63,61 @@
             margin-bottom: 15px;
         }
         
-        .text-image-section {
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 2rem;
+        /* Immagine a fianco */
+            .text-image-side {
+              display: flex;
+              align-items: center;
+              gap: 20px;
+              margin-bottom: 40px;
         }
         
-        .side-by-side {
-            display: flex;
-            flex-direction: column;
+            .text-image-side img {
+              max-width: 300px;
+              height: auto;
+              border-radius: 6px;
         }
         
-        .article-image {
-            width: 100%;
-            height: auto;
-            margin: 1rem 0;
-            border-radius: 5px;
-            border: 1px solid #e0e0e0;
+            .text-image-side p {
+              flex: 1;
+        }
+        
+        /* Immagine sotto */
+            .text-image-below {
+              text-align: left;
+              margin-bottom: 40px;
+        }
+        
+            .text-image-below img {
+              max-width: 100%;
+              height: auto;
+              margin-top: 10px;
+              border-radius: 6px;
+        }
+        
+        /* Responsive (facoltativo) */
+            @media (max-width: 600px) {
+              .text-image-side {
+                flex-direction: column;
+          }
+        
+              .text-image-side img,
+              .text-image-below img {
+                max-width: 100%;
+          }
+        }
+
+        
+            .side-by-side {
+                display: flex;
+                flex-direction: column;
+        }
+        
+            .article-image {
+                width: 100%;
+                height: auto;
+                margin: 1rem 0;
+                border-radius: 5px;
+                border: 1px solid #e0e0e0;
         }
         
         p {
@@ -184,21 +222,21 @@
             <div class="divider"></div>
 
              <section>
-                <div class="text-image-section">
                     <p>«I proletari non hanno patria» E quindi neanche frontiere. Ma il capitale le erige, la borghesia le arma e le marca con il sangue del proletariato stesso.</p>
-                </div>
-            </section>
+             </section>
           
             <section>
                 <h2 class="section-title">LA BARRIERA SANGUINARIA DELL’IMPERIALISMO</h2>
-                <div class="text-image-section">
+                <div class="text-image-below">
                     <p>Frontex, acclamata come “scudo” dell’Europa, non è un’agenzia tecnica. È il braccio armato della borghesia dell’Unione Europea, incaricato di presidiare le trincee di un sistema che trasforma esseri umani in merce da respingere, incarcerare o sfruttare. Con un budget passato da 6 milioni (nel 2005) a oltre 1,4 miliardi di euro (nel 2023), questa struttura paramilitare incarna la vera natura dell’UE: un cartello di Stati capitalisti uniti nella difesa dei privilegi del Nord globale, mentre saccheggiano il Sud del mondo con accordi neocoloniali e guerre per le risorse.</p>
+                    <img src="img/frontex1.png" alt="Esempio sotto">
                 </div>
             </section>
             
             <section>
-                <div class="text-image-section"> 
-                  <h2 class="section-title">IL MERCATO DELLA CARNE UMANA</h2>
+                <div class="text-image-side"> 
+                  <h2 class="section-title">IL MERCATO DELLA CARNE UMANA</h2> 
+                        <img src="img/frontex2.png" alt="Esempio sotto">
                            <p>Dietro la retorica del “controllo migratorio”, Frontex gestisce un sistema di filtraggio basato sulla classe:</p>
 
                                 <ul>
@@ -210,32 +248,29 @@
                                 </ul>
                               
                             <p>Non è un caso che i principali finanziatori di Frontex siano le stesse multinazionali che traggono profitto dalla detenzione: dalla Sicherheit GmbH (appalti per i centri di detenzione) fino alla Airbus, fornitrice delle tecnologie di sorveglianza.</p>
-                  </section>
+                </section>
             
             <section>
-                <div class="text-image-section"> 
                  <h2 class="section-title">LA TRAPPOLA DEI “DIRITTI UMANI” BORGHESI</h2>
                     <p>Le ONG che chiedono “più controlli etici” su Frontex cadono nella trappola riformista. Anche con un codice di condotta, Frontex resterebbe uno strumento di oppressione.</p>
                     <p>Come scrisse Lenin: <em>«Lo Stato borghese non è altro che un comitato d’affari della classe dominante»</em>.Pretendere che difenda i diritti dei migranti è come chiedere a un boia di usare la corda di seta.</p>
             </section>
             
             <section>
-                <div class="text-image-section"> 
+                <div class="text-image-below"> 
                   <h2 class="section-title">DA LAMPEDUSA ALLE FABBRICHE: LA SOLIDARIETÀ DI CLASSE È UN REATO</h2>
                     <p>Mentre Frontex criminalizza i migranti, gli Stati europei reprimono chi li sostiene: attivisti processati per “favoreggiamento”, sindacalisti denunciati per aver aiutato lavoratori senza permesso di soggiorno. L’obiettivo è chiaro: spezzare ogni legame tra proletari autoctoni e migranti. Perché quando un bracciante egiziano e un rider italiano lottano insieme, il capitale trema.</p>
                 </div>
             </section>
             
              <section>
-                <div class="text-image-section"> 
+                <div class="text-image-below"> 
                   <h2 class="section-title">DA LAMPEDUSA ALLE FABBRICHE: LA SOLIDARIETÀ DI CLASSE È UN REATO</h2>
-                    <p>Mentre Frontex criminalizza i migranti, gli Stati europei reprimono chi li sostiene: attivisti processati per “favoreggiamento”, sindacalisti denunciati per aver aiutato lavoratori senza permesso di soggiorno. L’obiettivo è chiaro: spezzare ogni legame tra proletari autoctoni e migranti. Perché quando un bracciante egiziano e un rider italiano lottano insieme, il capitale trema.</p>
-                    <img src="img/israelepalestina.png" class="article-image">   
+                    <p>Mentre Frontex criminalizza i migranti, gli Stati europei reprimono chi li sostiene: attivisti processati per “favoreggiamento”, sindacalisti denunciati per aver aiutato lavoratori senza permesso di soggiorno. L’obiettivo è chiaro: spezzare ogni legame tra proletari autoctoni e migranti. Perché quando un bracciante egiziano e un rider italiano lottano insieme, il capitale trema.</p>   
                 </div>
             </section>
             
             <section>
-                <div class="text-image-section">
                     <h2 class="section-title">IL PROGRAMMA RIVOLUZIONARIO</h2>
                       <ul>
                         <li>Demolire Frontex e ogni apparato di controllo dei confini.</li>
@@ -246,7 +281,8 @@
             </section>
                                       
                 <section>
-                    <div class="text-image-section">
+                    <div class="text-image-side"> 
+                       <img src="img/frontex3.png" class="article-image">
                        <h2 class="section-title">LA FRONTIERA È UNA LINEA DEL TRENO</h2>
                             <div class="text-content">
                                <p><em>«Non ci può essere socialismo se non internazionale, non ci può essere liberazione se non per tutti gli oppressi.»<br>
@@ -259,7 +295,8 @@
                     Sopprimiamo chi le difende.</p>
                   
                     <p><em>«La nostra patria è il mondo intero, la nostra legge è la libertà.»<br>
-                    — Carlo Cafiero</em></p>
+                    — Carlo Cafiero</em></p> 
+                    </div>              
                  </section>
                               
             <a href="index.html" class="next-article-button">Torna alla Home</a>
